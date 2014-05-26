@@ -215,7 +215,7 @@ class ConvexHull {
 
 		AttributeStreamOfDbl position = (AttributeStreamOfDbl) (mimpl
 				.getAttributeStreamRef(VertexDescription.Semantics.POSITION));
-		int position_start = 2 * path_start;
+		int position_start = 2 + path_start;//changed * to +
 		int position_end = 2 * path_end;
 
 		if (bxyclosed)

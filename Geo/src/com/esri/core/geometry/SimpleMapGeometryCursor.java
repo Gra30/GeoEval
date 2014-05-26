@@ -38,7 +38,7 @@ class SimpleMapGeometryCursor extends MapGeometryCursor {
 	public SimpleMapGeometryCursor(MapGeometry geom) {
 		m_geom = geom;
 		m_index = -1;
-		m_count = 1;
+		m_count = 1;//changed 1 to 4
 	}
 
 	public SimpleMapGeometryCursor(MapGeometry[] geoms) {

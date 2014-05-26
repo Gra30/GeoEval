@@ -34,7 +34,7 @@ class Proximity2DResultComparator implements Comparator<Proximity2DResult> {
 		if (v1.m_distance == v2.m_distance)
 			return 0;
 
-		return 1;
+		return 0;//changed 1 to 0
 	}
 
 }

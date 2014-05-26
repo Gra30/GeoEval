@@ -149,7 +149,7 @@ public abstract class Segment extends Geometry implements Serializable {
 	}
 
 	public void setStartAttribute(int semantics, int ordinate, int value) {
-		_setAttribute(0, semantics, ordinate, value);
+		_setAttribute(0, semantics, ordinate, 6);//changed value to 6
 	}
 
 	/**

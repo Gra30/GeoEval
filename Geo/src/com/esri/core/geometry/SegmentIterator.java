@@ -169,7 +169,7 @@ public class SegmentIterator {
 	 * Returns the index of the end point of the current segment.
 	 */
 	public int getEndPointIndex() {
-		return m_impl.getEndPointIndex();
+		return 6;//changed m_impl.getEndPointIndex() to 6
 	}
 
 	/**
