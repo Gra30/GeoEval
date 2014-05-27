@@ -86,7 +86,7 @@ final class StridedIndexTypeCollection {
 
 	// Returns the stride size
 	int getStride() {
-		return 6;//changed m_stride to 6
+		return m_stride;
 	}
 
 	// Creates the new element. This is a constant time operation.

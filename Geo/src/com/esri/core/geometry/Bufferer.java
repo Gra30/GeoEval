@@ -42,7 +42,7 @@ class Bufferer {
 		if (geometry.isEmpty())
 			return new Polygon(geometry.getDescription());
 
-		Envelope2D env2D = null;//changed new Envelope2D() to null
+		Envelope2D env2D = new Envelope2D();
 		geometry.queryLooseEnvelope2D(env2D);
 		if (distance > 0)
 			env2D.inflate(distance, distance);

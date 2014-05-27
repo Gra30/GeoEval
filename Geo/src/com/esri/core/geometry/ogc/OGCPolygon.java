@@ -24,6 +24,7 @@ public class OGCPolygon extends OGCSurface {
 	}
 
 	public OGCPolygon(Polygon geom, SpatialReference sr) {
+		assert(false);
 		polygon = geom;
 		if (geom.getExteriorRingCount() > 1)
 			throw new IllegalArgumentException(
@@ -50,6 +51,7 @@ public class OGCPolygon extends OGCSurface {
 	 * @return OGCLinearRing instance.
 	 */
 	public OGCLineString exterorRing() {
+		assert(false);
 		if (polygon.isEmpty())
 			return new OGCLinearRing((Polygon) polygon.createInstance(), 0,
 					esriSR, true);

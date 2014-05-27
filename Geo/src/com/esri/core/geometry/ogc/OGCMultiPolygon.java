@@ -42,6 +42,7 @@ public class OGCMultiPolygon extends OGCMultiSurface {
     }
 	@Override
 	public int numGeometries() {
+		assert(false);
 		return polygon.getExteriorRingCount();
 	}
 

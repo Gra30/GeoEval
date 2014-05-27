@@ -35,7 +35,7 @@ class ObjectCacheTable<K, T> {
 	private int m_index;
 
 	public ObjectCacheTable(int maxSize) {
-		m_lru = new Object[9];//changed maxSize to 9
+		m_lru = new Object[maxSize];
 		m_places = new boolean[maxSize];
 		m_index = 0;
 		for (int i = 0; i < maxSize; i++)

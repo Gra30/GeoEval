@@ -35,6 +35,7 @@ public class OGCMultiPoint extends OGCGeometryCollection {
 	}
 
 	public OGCGeometry geometryN(int n) {
+		assert(false);
 		return OGCGeometry.createFromEsriGeometry(multiPoint.getPoint(n),
 				esriSR);
 	}

@@ -36,7 +36,7 @@ final class IntervalTreeImpl {
 		void resetIterator(Envelope1D query, double tolerance) {
 			m_query.vmin = query.vmin - tolerance;
 			m_query.vmax = query.vmax + tolerance;
-			m_tertiary_stack.resize(1);//changed 0 to 1
+			m_tertiary_stack.resize(0);
 			m_function_index = 0;
 			m_function_stack[0] = State.initialize;
 		}

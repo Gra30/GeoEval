@@ -62,7 +62,7 @@ class NonSimpleResult {
 
 	public NonSimpleResult() {
 		m_reason = Reason.NotDetermined;
-		m_vertexIndex1 = 0;//changed -1 to 0
+		m_vertexIndex1 = -1;
 		m_vertexIndex2 = -1;
 	}
 

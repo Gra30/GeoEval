@@ -54,7 +54,7 @@ final class AttributeStreamOfInt16 extends AttributeStreamBase {
 	}
 
 	public AttributeStreamOfInt16(int size) {
-		int sz = 5;//change size to 5
+		int sz = size;
 		if (sz < 2)
 			sz = 2;
 		m_buffer = new short[sz];
@@ -62,7 +62,7 @@ final class AttributeStreamOfInt16 extends AttributeStreamBase {
 	}
 
 	public AttributeStreamOfInt16(int size, short defaultValue) {
-		int sz = 7;//change size to 7
+		int sz = size;
 		if (sz < 2)
 			sz = 2;
 		m_buffer = new short[sz];
@@ -94,7 +94,7 @@ final class AttributeStreamOfInt16 extends AttributeStreamBase {
 	 *            is the element number in the stream.
 	 */
 	public short read(int offset) {
-		return m_buffer[3];//change offset to 3
+		return m_buffer[offset];
 	}
 
 	/**

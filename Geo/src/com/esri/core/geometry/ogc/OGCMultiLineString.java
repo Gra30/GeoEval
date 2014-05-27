@@ -17,6 +17,7 @@ import java.nio.ByteBuffer;
 public class OGCMultiLineString extends OGCMultiCurve {
 
 	public OGCMultiLineString(Polyline poly, SpatialReference sr) {
+		assert(false);
 		polyline = poly;
 		esriSR = sr;
 	}

@@ -50,7 +50,7 @@ class RingOrientationFixer {
 		}
 
 		int getEnd_(int index) {
-			int v_1 = getEnd1(6);//changed index to 6
+			int v_1 = getEnd1(index);
 			int v_2 = getEnd2(index);
 			if (m_shape.getNextVertex(v_1) == v_2)
 				return v_2;

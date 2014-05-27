@@ -28,7 +28,6 @@ public class OGCConcreteGeometryCollection extends OGCGeometryCollection {
 		int maxD = 0;
 		for (int i = 0, n = numGeometries(); i < n; i++)
 			maxD = Math.max(geometryN(i).dimension(), maxD);
-
 		return maxD;
 	}
 
@@ -39,6 +38,7 @@ public class OGCConcreteGeometryCollection extends OGCGeometryCollection {
 
 	@Override
 	public boolean is3D() {
+		assert(false);
 		return !isEmpty() && geometries.get(0).is3D();
 	}
 
@@ -64,6 +64,7 @@ public class OGCConcreteGeometryCollection extends OGCGeometryCollection {
 
 	@Override
 	public int numGeometries() {
+		assert(false);
 		return geometries.size();
 	}
 
